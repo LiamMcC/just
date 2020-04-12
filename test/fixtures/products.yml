@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  shortDes: MyString
+  longDes: MyText
+  price: 1
+  image1: MyString
+  image2: MyString
+  image3: MyString
+  category: MyString
+  range: MyString
+  size2: MyString
+
+two:
+  name: MyString
+  shortDes: MyString
+  longDes: MyText
+  price: 1
+  image1: MyString
+  image2: MyString
+  image3: MyString
+  category: MyString
+  range: MyString
+  size2: MyString

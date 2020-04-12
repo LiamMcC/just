@@ -1,0 +1,2320 @@
+body
+{
+margin: 0;
+padding: 0;
+text-align : center; 
+}
+
+/*Links at vert top of page*/
+#TopMenu {
+   
+overflow : hidden; 
+width : 80%;
+text-align : left;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+margin-top : 0px; 
+padding-left: 0;
+height: 40px;
+margin-bottom: 5px;
+display:block;
+padding: 0;
+} 
+
+
+#TopMenu a{ 
+display: inline-block;
+height:40px;
+text-decoration : none; 
+font-size : 16px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #70B4ED;
+padding: 10px;
+
+}
+
+#passwordchangewrap {display: none;}
+
+#TopMenu a:hover {
+color : #F67841;
+text-decoration: underline;
+}
+
+.invis {display: none;}
+
+#reviews {display: none;}
+
+#writereviews {display: none;}
+
+#cats {display: none;}
+
+#penders {display:none;}
+#shippers {display:none;}
+
+
+#CartLineReviews {display: none;}
+#CartLineSizes {display: none;}
+#mssgs {display: none;}
+
+#infpgs {display: none;}
+
+
+/*Links at vert top of page*/
+
+
+/*Logo & search*/
+#LogoHolder {
+
+overflow : hidden; 
+width : 80%;
+text-align : left;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+margin-top : 0px; 
+padding-left: 0;
+margin-bottom: 5px;
+display:block;
+padding: 0;
+} 
+
+#TheLogo {
+float:left;
+width:40%;
+
+}
+
+
+
+#TheLogo h1{ 
+text-decoration : none; 
+font-size : 96px; 
+font-family: 'Tangerine', cursive;
+color: #555;
+padding: 0px;
+line-height: 50px;
+}
+
+strong {
+   color: #70B4ED;
+}
+
+#TheSearch {
+    float:left;
+width:60%;
+}
+
+#TheSearch1 {
+width:50%;
+height:70px;
+float: left;
+}
+
+#TheSearch2 {
+width:50%;
+height:70px;
+float: left;
+}
+
+
+#TheSearch1 a{ 
+display: inline-block;
+height:40px;
+text-decoration : none; 
+font-size : 20px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #70B4ED;
+padding: 10px;
+
+}
+
+
+#TheSearch2 a:hover {
+color : #F67841;
+text-decoration: underline;
+}
+
+
+#TheSearch2 a{ 
+display: inline-block;
+height:40px;
+text-decoration : none; 
+font-size : 20px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #70B4ED;
+padding: 10px;
+
+}
+
+
+#TheSearch1 a:hover {
+color : #F67841;
+text-decoration: underline;
+}
+
+
+#TheSearch3 {
+width:100%;
+height:60px;
+float: left;
+}
+
+.fancysearch {
+   width: 80%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../images/search.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+.cartim { 
+width: 10%;
+float: left;
+text-decoration:none;
+border-radius: 8px;
+margin-right:15px;
+}
+
+
+/*Logo & search*/
+
+/*Profile page styling */
+.MProfile {width: 40%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+
+
+
+/*Profile page styling end*/
+
+
+/* Navigation */
+
+.burgerwraper { display: none; }
+
+#NavigationHolder {
+overflow : hidden; 
+width : 100%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+display:block;
+
+} 
+
+
+.nav { 
+display: inline-block;
+font-size : 26px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+color: #000000;
+margin-left: 25px;
+margin-top: 5px;
+text-decoration : none; 
+}
+
+
+.nav a{ 
+display: inline-block;
+height:40px;
+text-decoration : none; 
+font-size : 24px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+color: #70B4ED;
+}
+
+
+.nav:hover {
+color : #555;
+text-decoration : underline; 
+}
+
+
+/* Navigation */ 
+
+
+/*Home Page Promo*/
+
+
+#ThePromo {
+    margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 100%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+display:block;
+background-image: url('../images/sexy.jpg');
+background-repeat:no-repeat;
+    background-size:cover;
+ background-position: center; 
+} 
+
+#ThePromoFiller {background-color: rgba(255,255,255,0.2);height: 600px;}
+
+
+
+#ThePromo h1{ 
+text-decoration : none; 
+font-size : 156px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #000000;
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+#ThePromo h2{ 
+text-decoration : none; 
+font-size : 36px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+color: #000000;
+padding: 0px;
+line-height: 50px;
+margin-top: 0px;
+}
+
+
+/*Home Page Promo*/
+
+
+/*The Latest Item*/
+
+
+.TheLatest {
+margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 100%;
+text-align : center;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+display:block;
+
+} 
+
+
+.TheLatestTitle {
+margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 80%;
+text-align : center;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+
+border-bottom: solid;
+border-color: #70B4ED;
+} 
+
+.TheLatestTitle h3{ 
+text-decoration : none; 
+font-size : 66px; 
+font-family: 'Tangerine', cursive;
+color: #70B4ED;
+padding: 0px;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+
+
+.TheLatestItem {
+min-height: 250px;
+overflow : hidden; 
+width : 20%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+margin-top: 5px;
+display:inline-block;
+border-radius: 4px;
+border-color: #808080;
+box-shadow: 5px 5px 5px #808080;
+
+vertical-align: top;
+} 
+
+.TheLatestItem:nth-child(even) {
+  
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+.TheLatestItem h1{ 
+text-decoration : none; 
+font-size : 26px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #555;
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 10px;
+}
+
+.TheLatestItem p{ 
+text-decoration : none; 
+font-size : 20px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #555;
+margin-left:auto;
+margin-right:auto;
+margin-top: 0px;
+margin-bottom: 10px;
+text-align:justify;
+width:80%;
+}
+
+.TheLatestItem h1 a{ 
+text-decoration : none; 
+font-size : 26px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #555;
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 10px;
+}
+
+.latestim { 
+width: 90%;
+text-decoration:none;
+margin-bottom: 15px;
+}
+
+/*The Latest Item*/
+
+
+/*Button Style*/
+.button {
+    background-color: #555; 
+    border: none;
+    color: #70B4ED;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+/*Button Style*/
+
+
+
+/*Home Page Promo2*/
+
+
+#ThePromo2 {
+    
+    margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 100%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+display:block;
+background-image: url('../images/3272b.jpg');
+background-repeat:no-repeat;
+    background-size:cover;
+ background-position: bottom;
+} 
+
+
+
+
+
+#ThePromo2 h1{ 
+text-decoration : none; 
+font-size : 156px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #ffffff;
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+#ThePromo2 h2{ 
+text-decoration : none; 
+font-size : 36px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+color: #ffffff;
+padding: 0px;
+line-height: 50px;
+margin-top: 0px;
+}
+
+
+/*Home Page Promo2*/
+
+
+
+/*Home Page Promo3*/
+
+
+#ThePromo3 {
+    
+    margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 100%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+display:block;
+background-image: url('../images/roza_genezis_black.jpg');
+background-repeat:no-repeat;
+    background-size:cover;
+ background-position: center;
+} 
+
+
+.ThePromo3Holder {
+ background-color: rgba(255,255,255,0.4) ;  
+    margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 25%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+margin-top: 5px;
+display:inline-block;
+min-height: 350px;
+} 
+
+
+#ThePromo3 p{ 
+text-decoration : none; 
+font-size : 36px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #000000;
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+.ThePromo3Holder h2{ 
+text-decoration : none; 
+font-size : 66px; 
+font-family: 'Tangerine', cursive; 
+color: #555;
+padding: 0px;
+line-height: 50px;
+margin-top: 20px;
+}
+
+
+/*Home Page Promo3*/
+
+
+/*Home footer*/
+
+
+#TheFooter {
+    
+    margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 100%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+display:block;
+background: #ccc;
+} 
+
+
+.TheFooterHolder {
+ background-color: rgba(255,255,255,0.4) ;  
+    margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 20%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+margin-top: 5px;
+display:inline-block;
+min-height: 350px;
+} 
+
+
+#TheFooter p{ 
+text-decoration : none; 
+font-size : 20px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #70B4ED; 
+
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+
+#TheFooter a{ 
+text-decoration : none; 
+font-size : 20px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #70B4ED; 
+
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+#TheFooter a:hover{ 
+text-decoration : underline; 
+
+}
+
+.TheFooterHolder h3{ 
+text-decoration : none; 
+font-size : 66px; 
+font-family: 'Tangerine', cursive; 
+color: #555;
+padding: 0px;
+line-height: 50px;
+margin-top: 20px;
+margin-bottom: 10px;
+}
+
+
+/*Home Footer */
+
+
+
+/*individual pagestart*/
+
+#CrumbHolder {
+    background: #ccc;
+    margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 100%;
+text-align : center;
+height:40px;
+} 
+
+#CrumbHolder p{ 
+text-decoration : none; 
+font-size : 16px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #555;
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+#TheIndividual {
+    
+    margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 70%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+display:block;
+
+} 
+
+#TheIndividualPreview {
+    
+    margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 10%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+float:left;
+
+} 
+
+#TheIndividualMain {
+    
+    margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 60%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+float:left;
+
+} 
+
+#TheIndividualDetail {
+    
+    margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 30%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+float:left;
+
+} 
+
+#TheIndividualParagraph {
+
+    margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 100%;
+text-align : left;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+float:left;
+
+} 
+
+#TheIndividualParagraph p{
+
+    margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 100%;
+text-align : left;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+float:left;
+
+} 
+
+
+#TheIndividual h1{ 
+text-decoration : none; 
+font-size : 56px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #555;
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+#TheIndividual h2{ 
+text-decoration : none; 
+font-size : 26px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+color: #555;
+padding: 0px;
+line-height: 50px;
+margin-top: 0px;
+}
+
+#TheIndividual p{ 
+text-decoration : none; 
+font-size : 16px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+color: #555;
+padding: 0px;
+line-height: 50px;
+margin-top: 0px;
+text-align:justify;
+white-space: pre-line;
+}
+
+
+
+#TheIndividual h3{ 
+text-decoration : none; 
+font-size : 36px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+color: #ffffff;
+padding: 0px;
+line-height: 50px;
+margin-top: 0px;
+}
+
+
+#individualim { 
+width: 70%;
+float: left;
+text-decoration:none;
+margin-bottom: 20px;
+}
+
+.previewim { 
+width: 70%;
+
+text-decoration:none;
+margin-bottom: 20px;
+}
+
+
+/* Info Pages */
+#AboutParagraph {
+    
+    margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 55%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+display: inline-block;
+
+
+} 
+
+#AboutParagraph p{ 
+text-decoration : none; 
+font-size : 16px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+color: #555;
+padding: 0px;
+line-height: 50px;
+margin-top: 0px;
+text-align:justify;
+white-space: pre-line;
+}
+
+#AboutGraphich {
+
+    margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 40%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+display: inline-block;
+vertical-align: top;
+
+} 
+
+
+
+.messageim { 
+width: 20%;
+text-decoration:none;
+border-radius: 8px;
+margin-bottom:15px;
+display: inline-block;
+}
+
+/* Info pages end */
+
+/*You May Also Like*/
+
+
+.YouMayLike {
+margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 100%;
+text-align : center;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+display:block;
+
+} 
+
+#addedtocart {width:100%;  display:none; background:#39a6b5; margin-bottom: 5px;}
+
+#addedtocart p{ 
+    text-align: center;
+text-decoration : none; 
+font-size : 20px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #555;
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+.YouMayLikeTitle {
+    
+margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 80%;
+text-align : center;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+display:block;
+border-bottom: solid;
+border-color: #70B4ED;
+} 
+
+.YouMayLikeTitle h4{ 
+text-decoration : none; 
+font-size : 66px; 
+font-family: 'Tangerine', cursive;
+color: #808080;
+padding: 0px;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+
+
+.YouMayLikeItem {
+padding: 0;
+overflow : hidden; 
+width : 25%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+margin-top: 5px;
+display:inline-block;
+border-radius: 4px;
+border-color: #808080;
+box-shadow: 5px 5px 5px #808080;
+} 
+
+.YouMayLikeItem:nth-child(even) {
+  
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+.YouMayLikeItem h5{ 
+text-decoration : none; 
+font-size : 20px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #555;
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+.YouMayLikeItem p{ 
+text-decoration : none; 
+font-size : 20px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #555;
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+.YouMayLikeim { 
+width: 60%;
+text-decoration:none;
+margin-bottom: 15px;
+}
+
+/*You May Also Like*/
+
+
+
+/*individual page end*/
+
+
+/* Product Range Page */
+#TheRangeFiller {background-color: rgba(255,255,255,0.2);}
+
+.rangeim { 
+width: 50%;
+}
+
+/* Product Range Page */
+
+/*cart styling */
+
+.CartLinex {
+width: 80%; 
+display: inline-block; 
+background: #ccc;
+margin-bottom: 5px;
+background-color: rgba(0, 0, 0, 0.6);
+}
+
+.CartLinex p{ 
+text-decoration : none; 
+font-size : 30px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #ffffff;
+
+margin-top: 5px;
+margin-bottom: 20px;
+
+}
+
+
+.CartLine {
+width: 80%; 
+display: inline-block; 
+background: #ccc;
+margin-bottom: 5px;
+}
+
+.CartLine:nth-child(even) {
+  
+   background: #bfdef8;
+}
+
+.CartLineSection {
+width: 12%; 
+display: inline-block; 
+
+
+}
+
+.CartLineSectionmobl {
+display: none;
+
+}
+
+.CartLineSectionmobr {
+display: none;
+
+}
+
+
+.CartLinemob {
+display: none;
+}
+
+
+.cartpreviewim { 
+   
+width: 30%;
+display:inline-block;
+text-decoration:none;
+margin-top: 5px;
+margin-bottom: 5px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.CartLineSection p{ 
+text-decoration : none; 
+font-size : 20px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #555;
+
+margin-top: 5px;
+margin-bottom: 20px;
+
+}
+
+#paypalwraper2 {display:none;}
+
+/*cart styling */
+
+
+
+
+
+
+
+
+
+/*Mobile responsive media query */
+
+@media (max-width: 768px) {
+
+    /*Links at vert top of page*/
+#TopMenu {
+   
+overflow : hidden; 
+width : 100%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+margin-top : 0px; 
+padding-left: 0;
+height: 40px;
+margin-bottom: 5px;
+display:block;
+padding: 0;
+} 
+
+
+#TopMenu a{ 
+display: inline-block;
+height:40px;
+text-decoration : none; 
+font-size : 14px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #70B4ED;
+padding: 10px;
+
+}
+
+
+#TopMenu a:hover {
+color : #F67841;
+text-decoration: underline;
+}
+
+
+/*Links at vert top of page*/
+
+
+/*Logo & search*/
+#LogoHolder {
+
+overflow : hidden; 
+width : 100%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+margin-top : 0px; 
+margin-bottom: 5px;
+display:block;
+
+} 
+
+#TheLogo {
+    display: block;
+margin-left: auto;
+margin-right: auto;
+width:100%;
+
+}
+
+
+
+#TheLogo h1{ 
+text-decoration : none; 
+font-size : 56px; 
+font-family: 'Tangerine', cursive;
+color: #555;
+
+line-height: 50px;
+}
+
+strong {
+   color: #70B4ED;
+}
+
+#TheSearch {
+    float:left;
+width:100%;
+text-align:center;
+}
+
+#TheSearch1 {
+width:100%;
+height:40px;
+float: left;
+text-align:center;
+}
+
+#TheSearch2 {
+width:100%;
+height:40px;
+float: left;
+}
+
+
+#TheSearch1 a{ 
+display: inline-block;
+height:40px;
+text-decoration : none; 
+font-size : 20px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #70B4ED;
+padding: 10px;
+
+}
+
+
+#TheSearch2 a:hover {
+color : #F67841;
+text-decoration: underline;
+}
+
+
+#TheSearch2 a{ 
+display: inline-block;
+height:40px;
+text-decoration : none; 
+font-size : 20px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #70B4ED;
+padding: 10px;
+
+}
+
+
+#TheSearch1 a:hover {
+color : #F67841;
+text-decoration: underline;
+}
+
+
+#TheSearch3 {
+width:100%;
+height:60px;
+float: left;
+}
+
+.fancysearch {
+   width: 80%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../images/search.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+.cartim { 
+display:none
+}
+
+
+/*Logo & search*/
+
+
+
+
+/* Navigation */
+
+#NavigationHolder {
+overflow : hidden; 
+width : 100%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+display:block;
+
+} 
+
+
+.nav { 
+display: block;
+font-size : 26px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+color: #000000;
+margin-left: 25px;
+margin-top: 5px;
+text-decoration : none; 
+}
+
+
+.nav a{ 
+display: inline-block;
+height:40px;
+text-decoration : none; 
+font-size : 24px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+color: #70B4ED;
+}
+
+
+.nav:hover {
+color : #555;
+text-decoration : underline; 
+}
+
+
+/* Navigation */ 
+
+
+/*Home Page Promo*/
+
+
+#ThePromo {
+    margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 100%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+display:block;
+background-image: url('../images/sexy.jpg');
+background-repeat:no-repeat;
+    background-size:cover;
+ background-position: center; 
+} 
+
+#ThePromoFiller {background-color: rgba(255,255,255,0.2);height: 400px;}
+
+
+
+#ThePromo h1{ 
+text-decoration : none; 
+font-size : 66px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #000000;
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+#ThePromo h2{ 
+text-decoration : none; 
+font-size : 26px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+color: #196ff7;
+padding: 0px;
+line-height: 50px;
+margin-top: 0px;
+}
+
+
+/*Home Page Promo*/
+
+
+/*The Latest Item*/
+
+
+.TheLatest {
+margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 100%;
+text-align : center;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+display:block;
+
+} 
+
+
+.TheLatestTitle {
+margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 80%;
+text-align : center;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+display:block;
+border-bottom: solid;
+border-color: #70B4ED;
+} 
+
+.TheLatestTitle h3{ 
+text-decoration : none; 
+font-size : 36px; 
+font-family: 'Tangerine', cursive;
+color: #70B4ED;
+padding: 0px;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+
+
+.TheLatestItem {
+padding: 0;
+overflow : hidden; 
+width : 80%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+margin-top: 5px;
+display:inline-block;
+border-radius: 4px;
+border-color: #808080;
+box-shadow: 5px 5px 5px #808080;
+} 
+
+.TheLatestItem:nth-child(even) {
+  
+    margin-left: 00px;
+    margin-right: 00px;
+}
+
+
+.TheLatestItem h1{ 
+text-decoration : none; 
+font-size : 20px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #555;
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+.latestim { 
+width: 90%;
+text-decoration:none;
+margin-bottom: 15px;
+}
+
+/*The Latest Item*/
+
+
+/*Button Style*/
+.button {
+    background-color: #555; 
+    border: none;
+    color: #70B4ED;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*Button Style*/
+
+
+
+/*Home Page Promo2*/
+
+
+#ThePromo2 {
+    
+    margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 100%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+display:block;
+background-image: url('../images/3272b.jpg');
+background-repeat:no-repeat;
+    background-size:cover;
+ background-position: bottom;
+} 
+
+
+
+
+
+#ThePromo2 h1{ 
+text-decoration : none; 
+font-size : 86px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #ffffff;
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+#ThePromo2 h2{ 
+text-decoration : none; 
+font-size : 26px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+color: #ffffff;
+padding: 0px;
+line-height: 50px;
+margin-top: 0px;
+}
+
+
+/*Home Page Promo2*/
+
+
+
+/*Home Page Promo3*/
+
+
+#ThePromo3 {
+    
+    margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 100%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+display:block;
+background-image: url('../images/roza_genezis_black.jpg');
+background-repeat:no-repeat;
+    background-size:cover;
+ background-position: center;
+} 
+
+
+.ThePromo3Holder {
+ background-color: rgba(255,255,255,0.4) ;  
+    margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 80%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+margin-top: 5px;
+display:inline-block;
+min-height: 350px;
+} 
+
+
+#ThePromo3 p{ 
+text-decoration : none; 
+font-size : 36px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #000000;
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+.ThePromo3Holder h2{ 
+text-decoration : none; 
+font-size : 66px; 
+font-family: 'Tangerine', cursive; 
+color: #555;
+padding: 0px;
+line-height: 50px;
+margin-top: 20px;
+}
+
+
+/*Home Page Promo3*/
+
+
+/*Home footer*/
+
+
+#TheFooter {
+    
+    margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 100%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+display:block;
+background: #ccc;
+} 
+
+
+.TheFooterHolder {
+ background-color: rgba(255,255,255,0.4) ;  
+    margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 90%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+margin-top: 5px;
+display:inline-block;
+min-height: 350px;
+} 
+
+
+#TheFooter p{ 
+text-decoration : none; 
+font-size : 20px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #70B4ED; 
+
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+.TheFooterHolder h3{ 
+text-decoration : none; 
+font-size : 66px; 
+font-family: 'Tangerine', cursive; 
+color: #555;
+padding: 0px;
+line-height: 50px;
+margin-top: 20px;
+margin-bottom: 10px;
+}
+
+/*individual pagestart*/
+
+#CrumbHolder {
+    background: #ccc;
+    margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 100%;
+text-align : center;
+height:40px;
+} 
+
+#CrumbHolder p{ 
+text-decoration : none; 
+font-size : 16px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #555;
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+#TheIndividual {
+    
+overflow : hidden; 
+width : 100%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+
+margin-bottom: 5px;
+display:block;
+
+} 
+
+#TheIndividualPreview {
+    
+
+overflow : hidden; 
+width : 100%;
+
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+margin-bottom: 5px;
+
+
+} 
+
+#TheIndividualMain {
+    
+    
+overflow : hidden; 
+width : 100%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+
+margin-bottom: 5px;
+
+
+} 
+
+#TheIndividualDetail {
+    
+    margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 100%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+
+margin-bottom: 5px;
+float:left;
+
+} 
+
+#TheIndividualParagraph {
+    
+
+overflow : hidden; 
+width : 100%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+
+margin-bottom: 5px;
+
+
+} 
+
+#TheIndividual h1{ 
+text-decoration : none; 
+font-size : 56px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #555;
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+#TheIndividual h2{ 
+text-decoration : none; 
+font-size : 26px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+color: #555;
+padding: 0px;
+line-height: 50px;
+margin-top: 0px;
+}
+
+#TheIndividual p{ 
+text-decoration : none; 
+font-size : 16px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+text-align: center;
+width: 90%;
+line-height: 50px;
+margin-top: 0px;
+display: inline-block;
+white-space: pre-line;
+
+}
+
+
+
+
+#TheIndividual h3{ 
+text-decoration : none; 
+font-size : 36px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+color: #ffffff;
+padding: 0px;
+line-height: 50px;
+margin-top: 0px;
+}
+
+
+#individualim { 
+width: 100%;
+display: block;
+text-decoration:none;
+margin-bottom: 20px;
+}
+
+.previewim { 
+   
+width: 30%;
+display:inline-block;
+text-decoration:none;
+margin-bottom: 20px;
+margin-left:auto;
+margin-right:auto;
+}
+
+
+
+/*You May Also Like*/
+
+
+.YouMayLike {
+margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 100%;
+text-align : center;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+display:block;
+
+} 
+
+
+.YouMayLikeTitle {
+    
+margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 80%;
+text-align : center;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+display:block;
+border-bottom: solid;
+border-color: #70B4ED;
+} 
+
+.YouMayLikeTitle h4{ 
+text-decoration : none; 
+font-size : 66px; 
+font-family: 'Tangerine', cursive;
+color: #808080;
+padding: 0px;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+
+
+.YouMayLikeItem {
+padding: 0;
+overflow : hidden; 
+width : 90%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+margin-top: 5px;
+display:inline-block;
+border-radius: 4px;
+border-color: #808080;
+box-shadow: 5px 5px 5px #808080;
+} 
+
+.YouMayLikeItem:nth-child(even) {
+  
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+.YouMayLikeItem h5{ 
+text-decoration : none; 
+font-size : 20px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #555;
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+.YouMayLikeItem p{ 
+text-decoration : none; 
+font-size : 20px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #555;
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+.YouMayLikeim { 
+width: 60%;
+text-decoration:none;
+margin-bottom: 15px;
+}
+
+/*You May Also Like*/
+
+
+.MProfile {
+    width: 90%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+#TheIndividual {
+    
+    margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 100%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+display:block;
+
+} 
+
+
+/*individual page end*/
+
+#NavigationHolder {
+    Display: none;
+    width:100%;
+            height:auto;
+}
+
+.burgerwraper{
+	display: block;
+overflow : hidden; 
+width : 10%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+
+} 
+
+#TheSearch3 {
+width:100%;
+height: auto;
+float: left;
+}
+
+/* Info Pages */
+#AboutParagraph {
+    
+    margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 90%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+display: inline-block;
+
+
+} 
+
+#AboutParagraph p{ 
+text-decoration : none; 
+font-size : 16px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+color: #555;
+padding: 0px;
+line-height: 50px;
+margin-top: 0px;
+text-align:justify;
+white-space: pre-line;
+}
+
+#AboutGraphich {
+
+    margin: 0;
+padding: 0;
+overflow : hidden; 
+width : 90%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+padding-left: 0;
+margin-bottom: 5px;
+display: inline-block;
+vertical-align: top;
+
+} 
+
+
+
+.messageim { 
+width: 45%;
+text-decoration:none;
+border-radius: 8px;
+margin-bottom:15px;
+display: inline-block;
+}
+
+/* Info pages end */
+
+
+
+.CartLineSection {
+width: 30%; 
+display: none; 
+
+}
+
+.CartLine {
+width: 80%; 
+display: none; 
+background: #ccc;
+margin-bottom: 5px;
+}
+
+.CartLineSectionmobl {
+    display:block;
+width: 30%; 
+float: left; 
+
+}
+
+.CartLineSectionmobr {
+width: 66%; 
+float: left; 
+display:block;
+}
+
+
+.CartLinemob {
+width: 90%; 
+display: none; 
+background: #ccc;
+margin-bottom: 5px;
+display:block;
+}
+
+}
+
+
+/* Tablet response */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+
+
+#TopMenu {
+   
+overflow : hidden; 
+width : 100%;
+text-align : center;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+margin-top : 0px; 
+padding-left: 0;
+height: 40px;
+margin-bottom: 5px;
+display:block;
+padding: 0;
+} 
+
+
+#TopMenu a{ 
+display: inline-block;
+height:40px;
+text-decoration : none; 
+font-size : 16px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #70B4ED;
+padding: 10px;
+
+}
+
+
+#LogoHolder {
+
+overflow : hidden; 
+width : 90%;
+text-align : left;
+list-style: none;
+margin-left : auto; 
+margin-right : auto; 
+margin-top : 0px; 
+padding-left: 0;
+margin-bottom: 5px;
+display:block;
+padding: 0;
+} 
+
+#TheLogo {
+float:left;
+width:40%;
+
+}
+
+
+
+#TheLogo h1{ 
+text-decoration : none; 
+font-size : 76px; 
+font-family: 'Tangerine', cursive;
+color: #555;
+padding: 0px;
+line-height: 50px;
+}
+
+strong {
+   color: #70B4ED;
+}
+
+#TheSearch {
+    float:left;
+width:60%;
+}
+
+#TheSearch1 {
+width:50%;
+height:70px;
+float: left;
+}
+
+#TheSearch2 {
+width:100%;
+height:auto;
+float: left;
+}
+
+
+#TheSearch1 a{ 
+display: inline-block;
+height:40px;
+text-decoration : none; 
+font-size : 20px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #70B4ED;
+padding: 10px;
+
+}
+
+
+#TheSearch2 a:hover {
+color : #F67841;
+text-decoration: underline;
+}
+
+
+#TheSearch2 a{ 
+display: inline-block;
+height:40px;
+text-decoration : none; 
+font-size : 20px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #70B4ED;
+padding: 10px;
+
+}
+
+#TheSearch1 {
+width:100%;
+height:Auto;
+float: left;
+}
+
+
+#TheSearch1 a:hover {
+color : #F67841;
+text-decoration: underline;
+}
+
+
+#TheSearch3 {
+width:100%;
+height:60px;
+float: left;
+}
+
+.fancysearch {
+   width: 60%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../images/search.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+.cartim { 
+width: 10%;
+float: left;
+text-decoration:none;
+border-radius: 8px;
+margin-right:15px;
+}
+
+
+.nav { 
+display: inline-block;
+font-size : 16px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+color: #000000;
+margin-left: 25px;
+margin-top: 5px;
+text-decoration : none; 
+}
+
+
+.nav a{ 
+display: inline-block;
+height:40px;
+text-decoration : none; 
+font-size : 16px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+color: #70B4ED;
+}
+
+
+.nav:hover {
+color : #555;
+text-decoration : underline; 
+}
+
+
+#ThePromo h1{ 
+text-decoration : none; 
+font-size : 106px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #000000;
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+#ThePromoFiller {background-color: rgba(255,255,255,0.2);height: auto;}
+
+
+.TheLatestItem {
+min-height: 250px;
+overflow : hidden; 
+width : 20%;
+vertical-align: top;
+} 
+
+
+.TheLatestItem h1{ 
+text-decoration : none; 
+font-size : 18px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #555;
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 10px;
+}
+
+.TheLatestItem p{ 
+text-decoration : none; 
+font-size : 16px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #555;
+margin-left:auto;
+margin-right:auto;
+margin-top: 0px;
+margin-bottom: 10px;
+text-align:justify;
+width:80%;
+min-height: 90px;
+}
+
+.TheLatestItem h1 a{ 
+text-decoration : none; 
+font-size : 18px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #555;
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 10px;
+}
+
+.latestim { 
+width: 90%;
+text-decoration:none;
+margin-bottom: 15px;
+}
+
+    .ThePromo3Holder {
+        vertical-align: top;
+        min-height: 260px;
+    }
+
+
+
+
+#ThePromo3 p{ 
+text-decoration : none; 
+font-size : 26px; 
+font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif; 
+color: #000000;
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+.ThePromo3Holder h2{ 
+text-decoration : none; 
+font-size : 46px; 
+font-family: 'Tangerine', cursive; 
+color: #555;
+padding: 0px;
+line-height: 50px;
+margin-top: 20px;
+}
+
+    .TheFooterHolder {
+        width: 48%;
+    }
+
+}
+
+/* Tablet response */

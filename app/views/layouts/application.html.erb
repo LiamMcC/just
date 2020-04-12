@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lingerie</title>
+    
+       <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <meta name="p:domain_verify" content="8bd115fdb35f537312a0b00e081a4376"/>
+    <meta name="google-site-verification" content="96OHxi8ooOYXM3Wczx1L9SXGgr6XZVEuwAvFn8ToNvE" />
+    
+    
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+         <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90619023-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<div id="TopMenu">
+
+            <a href="/">HOME</a>
+            <a href="About">ABOUT</a>
+            <a href="blog">BLOG</a>
+            <a href="contact">CONTACT</a>
+
+        </div>
+
+        <div id="LogoHolder">
+            <div id="TheLogo">
+                <h1>
+                    Just
+                    <strong>Lingerie</strong>
+                    .ie
+                </h1>
+
+            </div>
+            <div id="TheSearch">
+
+                <div id="UpdatePanelCart">
+                </div>
+
+                <div id="TheSearch2">
+
+                    <a href="Account/Register">Register</a>
+                    <a href="Account/Login">Log in</a>
+
+                </div>
+
+                <div id="TheSearch3">
+                    <input name="ctl00$TextBox1" type="text" id="TextBox1" class="fancysearch" placeholder="Search.."/>
+
+                    <input type="button" name="ctl00$SearchB" value="Search" onclick="javascript:__doPostBack(&#39;ctl00$SearchB&#39;,&#39;&#39;)" id="SearchB" class="button" Type="Button"/>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- The Nave menu useses sql source 1 -->
+
+        <div id="NavigationHolder">
+
+            <a href="/THONGS%20PANTIES" class="nav">
+                <span id="Repeater1_LongDescLabel_0">THONGS PANTIES</span>
+            </a>
+
+            </a>
+
+            <a href="/CORSETS" class="nav">
+                <span id="Repeater1_LongDescLabel_1">CORSETS</span>
+            </a>
+
+            </a>
+
+            <a href="/CHEMISE" class="nav">
+                <span id="Repeater1_LongDescLabel_2">CHEMISE</span>
+            </a>
+
+            </a>
+
+            <a href="/SETS" class="nav">
+                <span id="Repeater1_LongDescLabel_3">SETS</span>
+            </a>
+
+            </a>
+
+            <a href="/TEDDY" class="nav">
+                <span id="Repeater1_LongDescLabel_4">TEDDY</span>
+            </a>
+
+            </a>
+
+            <a href="/STOCKINGS" class="nav">
+                <span id="Repeater1_LongDescLabel_5">STOCKINGS</span>
+            </a>
+
+            </a>
+
+            <a href="/DRESS-UP" class="nav">
+                <span id="Repeater1_LongDescLabel_6">DRESS-UP</span>
+            </a>
+
+            </a>
+
+            <a href="/VALENTINES" class="nav">
+                <span id="Repeater1_LongDescLabel_7">VALENTINES</span>
+            </a>
+
+            </a>
+
+            <!-- <a href="">  -->
+
+        </div>
+
+        <img src="images/burger.png" id="burger" class="burgerwraper" alt="an image"/>
+
+
+
+             <script>
+
+$(document).ready(function menu(){
+    $("#burger").click(function menu(){
+        $("#NavigationHolder").slideToggle();
+    });
+});
+
+</script>
+       
+            <%= yield %>
+            <hr />
+
+        <div id="TheFooter">
+
+            <div class="TheFooterHolder">
+                <h3>Social</h3>
+                <p><a href="https://www.facebook.com/CoveredByLace/">Facebook</a></p>
+                <p>Twitter</p>
+                <p>Linked-In</p>
+                <p>Snapchat</p>
+
+            </div>
+
+             <div class="TheFooterHolder">
+                <h3>Info</h3>
+                <p><a runat="server" href="~/returnspolicy">Returns Policy</a></p>
+                <p><a runat="server" href="~/terms">Terms & Conditions</a></p>
+                <p><a runat="server" href="~/ordering">Ordering</a></p>
+                <p><a runat="server" href="~/faq">F.A.Q.</a></p>
+
+            </div>
+
+             <div class="TheFooterHolder">
+                <h3>News</h3>
+                <p><a runat="server" href="~/blog">
+                    Latest Blog ( <asp:Label ID="BlogLab" runat="server" Text="Label"></asp:Label>)</a></p>
+                <p><a runat="server" href="~/announcements">Other Announcements</a></p>
+                <p><a runat="server" href="~/jobs">Jobs</a></p>
+                <p><a runat="server" href="~/lingerieparties">Lingerie Parties</a></p>
+
+            </div>
+
+             <div class="TheFooterHolder">
+                <h3>Misc</h3>
+                <p><a runat="server" href="~/lingeriereviews">Read Reviews</a></p>
+                <p><a runat="server" href="~/leaveareview">Leave Review</a></p>
+                <p><a runat="server" href="~/giftvouchers">Gift Vouchers</a></p>
+                <p>&copy;  - JustLingerie.ie</p>
+
+            </div>
+
+
+        </div>
+            
+        
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+

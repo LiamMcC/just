@@ -1,0 +1,232 @@
+
+
+    
+
+
+    
+
+    
+    
+    <div id="TheIndividual"><h1><%= @lingerie.Name %></h1>
+
+
+
+    <div id="TheIndividualPreview">
+        <img class="previewim" id="btn1" src="/assets/<%= @lingerie.Image1 %>"  alt="justlingerie item"/>
+        <img class="previewim" id="btn2" src="/assets/<%= @lingerie.Image2 %>" alt="justlingerie item"/>
+        <img class="previewim" id="btn3" src="/assets/<%= @lingerie.Image2 %>"  alt="justlingerie item"/>
+
+
+    </div>
+
+        
+
+
+    <div id="TheIndividualMain">
+        <img id="individualim" src="/assets/<%= @lingerie.Image1 %>"  alt="justlingerie item"/>
+
+    </div>
+
+        <script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#individualim").attr("src", "/assets/<%= @lingerie.Image1 %>");
+    });
+    $("#btn2").click(function(){
+        $("#individualim").attr("src", "/assets/<%= @lingerie.Image2 %>");
+    });
+    $("#btn3").click(function(){
+        $("#individualim").attr("src", "/assets/<%= @lingerie.Image2 %>");
+    });
+});
+</script>
+
+             
+
+
+    <div id="TheIndividualDetail">
+
+        <h2>Price: &euro;<%= @lingerie.Price %></h2>
+        <p>Item No. <%= @lingerie.id %></p>
+        <p>Availability: <%= @lingerie.Price %></p>
+        <p>Category: <%= @lingerie.Category %></p>
+
+
+        <p>Sizes Available: <%= @lingerie.Srange %></p>
+            
+            
+             
+            
+           
+
+
+        
+
+
+
+       <p>Choose Quantity</p>
+
+         <div id="addedtocart"><p>Sucessfully added to cart</p></div>
+
+         
+
+ 
+
+
+
+<select id="quantitys" name="quantity" class="fancysearch">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+</select>
+
+
+    <p>Shopping as Guest</p>
+     <button class="button" id="Button2" >Add To Caart</button>      
+
+
+    <button id="Button1"  OnClick="Button1_Click" class="button" >Li Add To Cart</button>
+    
+
+                
+
+            <h2>Summary</h2>
+            <h2><%# Eval("ShortDes") %></h2>
+
+        
+    </div>
+
+ 
+
+<div id="TheIndividualParagraph">
+
+    
+    
+     
+    <button ID="Button6" class="button" type="button">See Reviews</button>
+    <button ID="Button7" class="button" type="button">Leave Review</button>
+
+
+ 
+<div id="writereviews">
+    
+    <asp:TextBox ID="TextBoxReview" runat="server" Class="MProfile"></asp:TextBox>
+    <h2>Only press "Leave Review" once then refresh the page to see!<br />You must be logged in to leave a review.</h2>
+    <asp:Button ID="Button5" class="button" runat="server" Text="Leave This Review" /> 
+        
+    
+    </div>
+        
+     
+    <div id="reviews">
+    <asp:Repeater ID="Repeater2" runat="server" DataSourceID="SqlDataSource4">
+        <ItemTemplate>
+            
+            
+            <p><%# Eval("Author") %> Said: <%# Eval("Review") %></p>
+        
+    </div>
+
+
+
+    
+    <script>
+      $(document).ready(function () {
+          $("#Button6").click(function () {
+              $("#reviews").slideToggle();
+                         
+              
+          });
+
+          $("#Button7").click(function () {
+              $("#writereviews").slideToggle();
+
+
+          });
+          
+
+      $("#Button2").click(function () {
+                          $("#addedtocart").slideDown();
+                          $("#addedtocart").delay(2000).slideUp();
+
+                      });
+
+
+    $("#Button1").click(function () {
+              $("#addedtocart").slideDown();
+              $("#addedtocart").delay(2000).slideUp();
+              
+          });
+
+
+      })
+
+      
+
+      </script>
+
+    
+
+
+    <h2>Descrption of this Lingerie</h2>
+
+
+        <p><%= @lingerie.LongDes %></p>
+    
+    <p>
+
+        <%= @lingerie.Name %> is a beautiful lingerie item which comes to you as in discrete outer packaging which will contain your new lingerie in its own box which is supplied by the lingerie manufacturer.      
+Intimate and exciting lingerie ordered from JustLingerie.ie will have you feeling sexy in no-time. You can rest assured that <%= @lingerie.Name %> is not just another lingerie item but it is a lingerie item specifically chosen by JustLingerie.ie as part of our lingerie <%= @lingerie.Category %> collection to afford you the opportunity to relax knowing that what you are ordering is first class quality.
+Each and every product in our <%= @lingerie.Category %> lingerie range is manufactured to the highest standards by lingerie manufacturers that we know and trust. So we know you will know and trust in the <%= @lingerie.Category %> lingerie you are buying too.           
+The material used to create <%= @lingerie.Name %> is specifically used in the manufacture of this lingerie to allow your skin to feel as sexy under the lingerie as you look in the lingerie. As soon as you slip into <%= @lingerie.Name %> you will know that you are as sexy as you feel. 
+<%= @lingerie.Name %>> lingerie is available right now from JustLingerie.ie is size(s) <%= @lingerie.Srange %>. However if you are more comfortable or feel more sexy wearing lingerie such as <%= @lingerie.Category %> that may be a different size than that as advertised on JustLigerie.ie you can contact us at any time to see have we got <%= @lingerie.Name %> in your size.
+Just because you do not see the lingerie you want in the size that best suits your sexy body shape doesn’t mean that we can’t get <%= @lingerie.Name %> in your size. Furthermore we have every confidence that there will be lingerie that you love and will be very comfortable, sexy not to mention desirable in. So please look through JustLingerie.ie for more sexy items in our <%= @lingerie.Category %> section.  
+This lingerie is categorised under <%= @lingerie.Category %>. Although some lingerie can be categorised in different sections we here at JustLingerie.ie believe that this particular piece of lingerie you are interested in is best suited in the <%= @lingerie.Category %> category.
+Remember that it is our aim here in JustLingerie.ie that you feel confident wearing any <%= @lingerie.Category %> that you order from us and you know that you are sexy, seductive and pretty no matter what lingerie you wear. 
+        After all JustLingerie.ie is only here to supply lingerie that will only stand to compliment your natural appeal. 
+
+
+    </p>
+       
+    </div>
+
+        </div>
+        
+    
+           <div class="TheLatest">
+          
+
+        <div class="TheLatestTitle"><h3>You May Also Like</h3></div>
+              
+               <asp:Repeater ID="Repeater5" runat="server" DataSourceID="SqlDataSource3">
+             <ItemTemplate>
+                 <div class="TheLatestItem">
+       <h1><asp:Label ID="Label1" runat="server" Text='<%# Bind("ProductName") %>' /></h1>
+            <img class="latestim" src="../../images/<%# Eval("ProductPicture") %>"  alt="justlingerie item"/>
+            <p>&euro;<asp:Label ID="Label3" runat="server" Text='<%# Bind("ProductPrice") %>' /></p>
+            
+            
+                <a href="<%# GetRouteUrl("Lingerieyoulike", New With {.name = Eval("ProductName"), .category = "Lingerie-you-may-like", .id = Eval("ProductId")}) %>" class="button">Details</a>
+        </div>   
+
+
+
+                 </ItemTemplate>
+         </asp:Repeater>
+
+
+
+
+
+             
+
+        
+    </div>
+
+    
+   
+    
+
+

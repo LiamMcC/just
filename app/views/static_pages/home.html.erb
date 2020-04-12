@@ -1,0 +1,90 @@
+
+    
+    
+   
+     <div id="TheRangePromo">
+         
+         
+         
+        
+         <div id="TheRangeFiller">
+
+           
+            
+            
+
+       <img class="rangeim" src="/assets/sexy.jpg"  alt="justlingerie item"/>
+            </div>
+
+    </div>
+    <!-- Dynamically Change the Background with jquery 
+    <script>
+        $(document).ready(function () {
+            $("#TheRangeFiller").css("background-image", "url('../images/thong.jpg')");
+            $("#TheRangeFiller").css("background-repeat", "no-repeat");
+            $("#TheRangeFiller").css("background-size", "cover");
+            $("#TheRangeFiller").css("background-position", "center");
+           
+            
+        });
+
+       
+      
+
+
+    </script>
+     -->
+
+
+    <div class="TheLatest">
+
+        <div class="TheLatestTitle"><h3><Label ID="Label1" >Corsets</Label></h3></div>
+
+   </div>
+
+     
+        
+    
+      
+         <% @products.each do |item| %>
+        <div class="TheLatestItem">
+         
+         
+         
+ <h1><%= item.Name %></h1>
+ <img class="latestim" src="/assets/<%= item.Image1 %>"  alt="justlingerie item"/>
+      
+      <p>&euro;<%= item.Price %></p>
+      <p>&euro;<%= item.ShortDes %></p>
+<a href="/<%= item.Name.gsub(' ','-') %>/<%= item.id %>" class="button">Details</a>
+    
+         
+    
+                
+        </div>
+
+<% end %>
+
+
+           
+        
+
+
+       
+
+    </div>
+
+
+
+     <div id="ThePromo2">
+       
+        <h1>Just Lingerie Blog</h1>
+        <h2>Secrets, tips, tricks, stories and gossip</h2>
+        <h2>See what our blog has to offer you...</h2>
+           
+
+
+    </div>
+
+
+
