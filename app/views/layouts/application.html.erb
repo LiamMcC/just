@@ -36,7 +36,7 @@
             <a href="/">HOME</a>
             <a href="About">ABOUT</a>
             <a href="blog">BLOG</a>
-            <a href="contact">CONTACT</a>
+            <a href="/cart">CART</a>
 
         </div>
 
@@ -56,8 +56,17 @@
 
                 <div id="TheSearch2">
 
-                    <a href="Account/Register">Register</a>
-                    <a href="Account/Login">Log in</a>
+          <% if user_signed_in? %>
+                 <a href="#">Hi <%= current_user.email %></a>
+                <%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>
+          <% else %>
+                <%= link_to 'Register', new_user_registration_path %> 
+                 <%= link_to 'Sign in', new_user_session_path %>
+          <% end %>
+
+
+
+                 
 
                 </div>
 

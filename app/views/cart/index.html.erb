@@ -1,0 +1,129 @@
+<% if @cart.empty? %>
+<p>You have not added any items yet</p>
+<% end %>
+
+
+
+<p id="notice"><%= notice %></p>
+
+<div class="cartholder" > 
+
+    <div class="CartLine">
+                 
+                 <div class="CartLineSection">
+                     <p>Image</p>
+                     </div>
+            <div class="CartLineSection">
+                     <p>Name</p>
+                     </div>
+            <div class="CartLineSection">
+                    <p>Price</p>
+                     </div>
+            <div class="CartLineSection">
+                     <p>Quantity</p>
+                     </div>
+            <div class="CartLineSection">
+                     <p>Total</p>
+                     </div>
+           
+            
+
+        <div class="CartLineSection">
+                     <p>Option</p>
+                     </div>
+           
+            </div>
+
+
+ <div class="CartLinemob">
+                     <div class="CartLineSectionmobl">
+
+                         <img class="cartpreviewim"  src="../../images/<%# Eval("ProductPicture") %>"  alt="justlingerie item"/>
+                         
+                         </div>
+
+                     <div class="CartLineSectionmobr">
+                         <p><asp:Label ID="Label3" runat="server" Text='<%# Eval("ProductName") %>' /><br /><asp:Label ID="Label4" runat="server" Text='<%# Eval("Size") %>' /></p>
+                         <p>&euro;<asp:Label ID="Label5" runat="server" Text='<%# Eval("ProductPrice") %>' /> x <asp:Label ID="Label6" runat="server" Text='<%# Eval("ProductQty") %>' /> (&euro;<asp:Label ID="Label7" runat="server" Text='<%# Eval("ItemPriceTotal") %>' />)</p>
+                         <p><asp:Button ID="Button3" runat="server" class="button" Text="x" CommandName="delete" UseSubmitBehavior="False"/></p>
+                     </div>
+
+                     </div>
+
+
+
+  <% total = 0 %>
+        <% @cart.each do |id, quantity| %>
+<% item = Product.find_by_id(id) %>
+                 <div class="CartLine">
+                 
+                 <div class="CartLineSection">
+                     <img class="cartpreviewim" id="btn3" src="/assets/<%= item.Image1 %>"  alt="justlingerie item"/>
+                 
+                 </div>
+                     
+                 <div class="CartLineSection">               
+                 <p><%= item.Name %><br /><%= item.Srange %></p>
+                 </div>
+
+
+                 <div class="CartLineSection">
+                 <p>&euro;<%= item.Price %></p>
+                 </div>
+
+
+                 <div class="CartLineSection">
+                 <p><%= quantity %></p>
+                 </div>
+
+
+                 <div class="CartLineSection">
+                 <p><%= number_to_currency(quantity * item.Price, :unit =>"€") %></p>
+                 </div>
+
+                     <div class="CartLineSection">
+                 <p><a href="#">Remove From Cart</a></p>
+                 </div>
+                 </div>
+
+<% end %>
+
+
+
+
+
+
+
+    <table id="customers">
+        <% total = 0 %>
+        <% @cart.each do |id, quantity| %>
+        
+        <% item = Product.find_by_id(id) %>
+        
+        <tr>
+            <td>
+                <div class="image">
+               
+                </div>
+                
+            </td>
+            
+            <td class="title"><%= item.Name %></td>
+            <td><a href="#">Remove From Cart</a></td>
+            <td class="price"><%= number_to_currency(item.Price, :unit =>"€") %></td>
+            <td class="quantity"><%= quantity %></td>
+            <td class="price"><%= number_to_currency(quantity * item.Price, :unit =>"€") %></td>
+            
+        </tr>
+        
+        <tr>
+            <% total += quantity * item.Price %>
+          </tr>
+         <% end %>
+         <tr>
+            Grang Total: <%= number_to_currency(total, :unit => "€") %>
+          </tr>
+           
+    </table>
+      </div>
+

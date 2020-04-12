@@ -10,21 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200411185920) do
+ActiveRecord::Schema.define(version: 20200412163340) do
+
+  create_table "orders", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.datetime "order_date"
+    t.integer  "user_id"
+    t.string   "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_orders_on_user_id", using: :btree
+  end
 
   create_table "products", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "name"
-    t.string   "shortDes"
-    t.text     "longDes",    limit: 65535
-    t.integer  "price"
-    t.string   "image1"
-    t.string   "image2"
-    t.string   "image3"
-    t.string   "category"
-    t.string   "range"
-    t.string   "size2"
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.string  "Name"
+    t.string  "ShortDes"
+    t.text    "LongDes",  limit: 65535
+    t.integer "Price"
+    t.string  "Image1"
+    t.string  "Image2"
+    t.string  "image3"
+    t.string  "Category"
+    t.string  "Srange"
+    t.string  "Size2"
   end
 
   create_table "shows", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -33,4 +40,17 @@ ActiveRecord::Schema.define(version: 20200411185920) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "email",                  default: "", null: false
+    t.string   "encrypted_password",     default: "", null: false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
+    t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  end
+
+  add_foreign_key "orders", "users"
 end
