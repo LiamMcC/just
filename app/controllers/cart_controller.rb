@@ -5,14 +5,14 @@ class CartController < ApplicationController
  @user = User.find(current_user.id)
 
  # Step 2: Create a new order and associate it with the current user
- @order = @user.orders.build(:order_date => DateTime.now, :status => 'Pending')
+ @order = @user.orders.build(:order_date => DateTime.now, :uemail =>  @user.email, :status => 'Pending')
  @order.save
 
  # Step 3: For each item in the cart, create a new item on the order!!
  @cart = session[:cart] || {} # Get the content of the Cart
  @cart.each do | id, quantity |
  item = Product.find_by_id(id)
- @orderitem = @order.orderitems.build(:item_id => item.id, :title => item.Name, :description => item.ShortDes, :quantity => quantity, :price=> item.Price)
+ @orderitem = @order.orderitems.build(:item_id => item.id, :name => item.Name, :size => item.Srange, :quantity => quantity, :price=> item.Price)
  @orderitem.save
  end
  
@@ -29,7 +29,40 @@ end
   
   
   
-  
+     def guestcreateOrder
+ # Step 1: Get the current user
+ @userx = params[:who]
+
+ # Step 2: Create a new order and associate it with the current user
+ 
+  @order = Order.new do |u|
+      u.order_date = DateTime.now
+      u.uemail = @userx
+      u.user_id = 1
+      u.status = "Pending"
+   
+      
+    end
+    @order.save
+    
+
+ # Step 3: For each item in the cart, create a new item on the order!!
+ @cart = session[:cart] || {} # Get the content of the Cart
+ @cart.each do | id, quantity |
+ item = Product.find_by_id(id)
+ @orderitem = @order.orderitems.build(:item_id => item.id, :name => item.Name, :size => item.Srange, :quantity => quantity, :price=> item.Price)
+ @orderitem.save
+ end
+ 
+ 
+ @orders = Order.last
+ 
+ 
+@orderitems = Orderitem.where(order_id: Order.last)
+
+session[:cart] = nil
+session[:howMuch] = 0
+end
   
   
   

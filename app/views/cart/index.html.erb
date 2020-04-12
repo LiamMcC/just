@@ -126,4 +126,28 @@
            
     </table>
       </div>
+      
+      
+      <% if user_signed_in? %>  
+      
+<a href="/checkout">Pay and go</a>
+<% else %>
 
+<input id="chicken" placeholder="chicken"/>
+
+
+
+<%= form_tag("/guestcheckout", :method =>"get") do %>
+
+<%= text_field_tag(:who) %>
+<%= submit_tag("Guest Pay And Go") %>
+
+<% end %>
+
+
+
+<% end %>
+      
+      
+      
+      

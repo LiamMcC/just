@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
-  resources :orders
-  devise_for :users
+  resources :orders do 
+    resources:orderitems
+  end
+
+  devise_for :users do resources :orders end
+  get '/checkout' => 'cart#createOrder'
   
+  get '/guestcheckout' => 'cart#guestcreateOrder'
   
   get '/cart' => 'cart#index' 
 
@@ -17,6 +22,7 @@ Rails.application.routes.draw do
 
   get 'static_pages/blog'
   
+  get '/completeorder/paid/:id' => 'static_pages#paid'
   
 
   resources :shows
