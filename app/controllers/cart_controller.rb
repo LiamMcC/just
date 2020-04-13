@@ -31,7 +31,7 @@ end
   
      def guestcreateOrder
  # Step 1: Get the current user
- @userx = params[:who]
+ @userx = params[:user][:who]
 
  # Step 2: Create a new order and associate it with the current user
  
@@ -97,6 +97,15 @@ end
     
     redirect_to :action => :index
   end
+  
+  
+    def increase
+    id = params[:id]
+    cart = session[:cart]
+   cart[id] = cart[id] + 1
+    
+    redirect_to :action => :index
+  end
 
   def remove
     
@@ -123,6 +132,7 @@ end
   if cart[id] then
     cart[id] = cart[id] + 1
   else
+      
     cart[id]= 1
   end  
   

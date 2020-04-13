@@ -54,8 +54,11 @@ $(document).ready(function(){
 
         <p>Sizes Available: <%= @lingerie.Srange %></p>
             
-            
-             
+   <select name="sdfg">
+    <%= @products.each do |user| %>
+      <option value="<%= user.id %>"><%= user.Name %></option>
+    <% end %>
+  </select>
             
            
 
@@ -85,16 +88,31 @@ $(document).ready(function(){
 
     <p>Shopping as Guest</p>
     <a href="/cart/<%= @lingerie.id %>">Put Me In</a>
-     <button class="button" id="Button2" >Add To Caart</button>      
+     <button class="button" id="Buttonxx" >Add To Caart</button>      
 
 
     <button id="Button1"  OnClick="Button1_Click" class="button" >Li Add To Cart</button>
-    
-
+  <script>  
+ $(document).ready(function () {
+  $("#Buttonxx").click(function () {
+              $.ajax({
+  url: "/cart/<%= @lingerie.id %>",
+  type: "get",
+  data: "",
+  success: function(data) {$("#addedtocart").slideDown();
+                          $("#addedtocart").delay(2000).slideUp();},
+  error: function(data) {}
+})
+                         
+              
+          });
+ 
+ 
+});
                 
-
+</script>
             <h2>Summary</h2>
-            <h2><%# Eval("ShortDes") %></h2>
+            <h2><%= @lingerie.ShortDes %></h2>
 
         
     </div>

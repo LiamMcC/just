@@ -51,9 +51,10 @@
                      </div>
 
 
-
-  <% total = 0 %>
+<% total = 0 %>
+  
         <% @cart.each do |id, quantity| %>
+        
 <% item = Product.find_by_id(id) %>
                  <div class="CartLine">
                  
@@ -81,50 +82,32 @@
                  <p><%= number_to_currency(quantity * item.Price, :unit =>"€") %></p>
                  </div>
 
-                     <div class="CartLineSection">
-                 <p><a href="#">Remove From Cart</a></p>
+                     <div class="CartLineSection" >
+                 <p><a href="item/remove/<%= item.id %>"><i class='far fa-trash-alt'></i></a>
+               
+                 <a href="/item/increase/<%= item.id %>" ><i class='fas fa-arrow-alt-circle-up'></i></a>
+                 <a href="/item/reduce/<%= item.id %>" ><i class='fas fa-arrow-alt-circle-down'></i></a>
+                 </p>
                  </div>
                  </div>
+                 
+                 <% total += quantity * item.Price %>
+            
+            <% session[:howMuch] = total %>
 
 <% end %>
 
+<div class="CartLine">
+    <div class="CartLineSection">
+    <p>Grand Total: <%= number_to_currency(total, :unit => "€") %></p>
+    </div>
+    </div>
 
 
 
 
 
-
-    <table id="customers">
-        <% total = 0 %>
-        <% @cart.each do |id, quantity| %>
-        
-        <% item = Product.find_by_id(id) %>
-        
-        <tr>
-            <td>
-                <div class="image">
-               
-                </div>
-                
-            </td>
-            
-            <td class="title"><%= item.Name %></td>
-            <td><a href="#">Remove From Cart</a></td>
-            <td class="price"><%= number_to_currency(item.Price, :unit =>"€") %></td>
-            <td class="quantity"><%= quantity %></td>
-            <td class="price"><%= number_to_currency(quantity * item.Price, :unit =>"€") %></td>
-            
-        </tr>
-        
-        <tr>
-            <% total += quantity * item.Price %>
-          </tr>
-         <% end %>
-         <tr>
-            Grang Total: <%= number_to_currency(total, :unit => "€") %>
-          </tr>
-           
-    </table>
+    
       </div>
       
       
@@ -133,21 +116,22 @@
 <a href="/checkout">Pay and go</a>
 <% else %>
 
-<input id="chicken" placeholder="chicken"/>
+<input id="chicken" />
 
+<%= form_for(:user, :url=> "/guestcheckout", :html => { :method => 'get' }) do |f| %>
 
-
-<%= form_tag("/guestcheckout", :method =>"get") do %>
-
-<%= text_field_tag(:who) %>
-<%= submit_tag("Guest Pay And Go") %>
-
-<% end %>
-
+<%= f.text_field :who, :class =>"fancysearch", required: true, :placeholder =>"Email Address" %>
+<br>
+<%= f.submit "Pay As Guest", class: "button" %>
 
 
 <% end %>
+
+
+
+<% end %>
       
       
       
       
+    

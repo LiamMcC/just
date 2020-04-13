@@ -18,7 +18,7 @@ class StaticPagesController < ApplicationController
     @lingerie = @lingerieitem
     
     
-    #@products = Product.all
+    @products = Product.all
     
     
   end

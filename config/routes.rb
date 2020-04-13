@@ -24,6 +24,11 @@ Rails.application.routes.draw do
   
   get '/completeorder/paid/:id' => 'static_pages#paid'
   
+  
+  get '/item/remove/:id' => 'cart#remove'
+
+get '/item/increase/:id' => 'cart#increase'
+get '/item/reduce/:id' => 'cart#reduce'
 
   resources :shows
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
