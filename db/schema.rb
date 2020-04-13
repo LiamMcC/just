@@ -34,16 +34,18 @@ ActiveRecord::Schema.define(version: 20200412165442) do
   end
 
   create_table "products", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string  "Name"
-    t.string  "ShortDes"
-    t.text    "LongDes",  limit: 65535
-    t.integer "Price"
-    t.string  "Image1"
-    t.string  "Image2"
-    t.string  "image3"
-    t.string  "Category"
-    t.string  "Srange"
-    t.string  "Size2"
+    t.string   "name"
+    t.string   "shortDes"
+    t.text     "longDes",    limit: 65535
+    t.integer  "price"
+    t.string   "image1"
+    t.string   "image2"
+    t.string   "image3"
+    t.string   "category"
+    t.string   "range"
+    t.string   "size2"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
   create_table "shows", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
