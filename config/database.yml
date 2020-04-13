@@ -20,21 +20,7 @@ default: &default
   
   
   
-  #database: liam
-  #username: liamme
-  #password: L1Am39??
-  #host: hostingmysql304.webapps.net
   
-  #host: hostingmysql304.webapps.net
- #user: liamme
- #password: L1Am39??
- #database: liam
-  
-  
-  #Acad3m1cL1ng3r1es1te2020L1am
- # Host 217.115.118.201:3306
-#Database name lingerie
-#User name justlingerie
 
 development:
   <<: *default
@@ -68,6 +54,6 @@ test:
 #
 production:
   <<: *default
-  database: lingerie_production
+  database: lingerie
   username: lingerie
-  password: <%= ENV['LINGERIE_DATABASE_PASSWORD'] %>
+  password: Acad3m1cL1ng3r1es1te2020L1am
