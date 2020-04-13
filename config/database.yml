@@ -55,5 +55,4 @@ test:
 production:
   <<: *default
   database: lingerie
-  username: lingerie
-  password: Acad3m1cL1ng3r1es1te2020L1am
+  
